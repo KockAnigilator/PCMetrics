@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBack.Models
+namespace PcBack.Data.Models
 {
     /// <summary>
     /// Класс-модель для таблицы в бд

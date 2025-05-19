@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PcBack.Models
+namespace PcBack.Data.Models
 {
     /// <summary>
     /// Класс-модель для таблицы в бд

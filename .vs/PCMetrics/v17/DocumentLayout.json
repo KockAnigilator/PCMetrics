@@ -1,22 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\",
+  "WorkspaceRootPath": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\pcmetrics\\pcback\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\data\\dbconnect\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\data\\dbconnect\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\pcmetrics\\pcback\\models\\metricvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\models\\metricvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PcBack||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\pcmetrics\\pcback\\models\\metric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\models\\metric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\pcmetrics\\pcback\\models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\data\\models\\metric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\data\\models\\metric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\data\\models\\metricvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\data\\models\\metricvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\data\\models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\data\\models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +36,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PcBack",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\PcBack.csproj",
+              "RelativeDocumentMoniker": "PcBack\\PcBack.csproj",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\PcBack.csproj",
+              "RelativeToolTip": "PcBack\\PcBack.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-19T15:53:43.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\DbConnect\\Database.cs",
+              "RelativeDocumentMoniker": "PcBack\\Data\\DbConnect\\Database.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\DbConnect\\Database.cs",
+              "RelativeToolTip": "PcBack\\Data\\DbConnect\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:50:03.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\User.cs",
-              "RelativeDocumentMoniker": "PcBack\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\User.cs",
-              "RelativeToolTip": "PcBack\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PcBack\\Data\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\User.cs",
+              "RelativeToolTip": "PcBack\\Data\\Models\\User.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T15:34:48.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MetricValue.cs",
-              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\MetricValue.cs",
-              "RelativeDocumentMoniker": "PcBack\\Models\\MetricValue.cs",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\MetricValue.cs",
-              "RelativeToolTip": "PcBack\\Models\\MetricValue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\MetricValue.cs",
+              "RelativeDocumentMoniker": "PcBack\\Data\\Models\\MetricValue.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\MetricValue.cs",
+              "RelativeToolTip": "PcBack\\Data\\Models\\MetricValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T15:33:49.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Metric.cs",
-              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\Metric.cs",
-              "RelativeDocumentMoniker": "PcBack\\Models\\Metric.cs",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\Metric.cs",
-              "RelativeToolTip": "PcBack\\Models\\Metric.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\Metric.cs",
+              "RelativeDocumentMoniker": "PcBack\\Data\\Models\\Metric.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\Metric.cs",
+              "RelativeToolTip": "PcBack\\Data\\Models\\Metric.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T15:33:32.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Computer.cs",
-              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\Computer.cs",
-              "RelativeDocumentMoniker": "PcBack\\Models\\Computer.cs",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\source\\repos\\PCMetrics\\PcBack\\Models\\Computer.cs",
-              "RelativeToolTip": "PcBack\\Models\\Computer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\Computer.cs",
+              "RelativeDocumentMoniker": "PcBack\\Data\\Models\\Computer.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\Computer.cs",
+              "RelativeToolTip": "PcBack\\Data\\Models\\Computer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T15:29:27.848Z",
               "EditorCaption": ""

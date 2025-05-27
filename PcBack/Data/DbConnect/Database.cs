@@ -11,7 +11,7 @@ namespace PcBack.Data.DbContext
     public static class Database
     {
         private static string connectionString =
-        "Host=localhost;Username=postgres;Password=ваш_пароль;Database=PcMonitoringDb";
+        "Host=localhost;Username=postgres;Password=1545;Database=PcMonitoringDb";
 
         public static NpgsqlConnection GetConnetction()
         {

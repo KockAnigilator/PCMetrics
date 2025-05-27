@@ -15,13 +15,13 @@ namespace PcBack.Data.Repository
     /// Дефолтные операции CRUD
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    interface IComputerRepository<T> where T : class
+    public interface IComputerRepository
     {
-        IEnumerable<T> GetBookList(); // получение всех объектов
-        T GetBook(int id); // получение одного объекта по id
-        void Create(T item); // создание объекта
-        void Update(T item); // обновление объекта
-        void Delete(int id); // удаление объекта по id
+        IEnumerable<Computer> GetAll();
+        Computer GetById(int id);
+        void Create(Computer item);
+        void Update(Computer item);
+        void Delete(int id);
     }
 
     /// <summary>
@@ -41,30 +41,29 @@ namespace PcBack.Data.Repository
         }
 
         /// <summary>
-        /// Реализация методов из интерфейс
+        /// Получить список всех компьютеров
         /// </summary>
-        /// <returns></returns>
         public IEnumerable<Computer> GetAll()
         {
             return _db.Query<Computer>("SELECT * FROM computers");
         }
 
         /// <summary>
-        /// Получить по айди
+        /// Получить компьютер по ID
         /// </summary>
-        /// <param name="id"> айди </param>
-        /// <returns></returns>
+        /// <param name="id">ID компьютера</param>
+        /// <returns>Объект Computer или null</returns>
         public Computer GetById(int id)
         {
             return _db.QueryFirstOrDefault<Computer>(
-                $"SELECT * FROM computers WHERE id = {1}", id
-                );
+                "SELECT * FROM computers WHERE id = @Id",
+                new { Id = id });
         }
 
         /// <summary>
-        /// Создание
+        /// Добавить новый компьютер в БД
         /// </summary>
-        /// <param name="computer"></param>
+        /// <param name="computer">Объект Computer</param>
         public void Create(Computer computer)
         {
             const string sql = @"
@@ -75,9 +74,9 @@ namespace PcBack.Data.Repository
         }
 
         /// <summary>
-        /// Update опрерация
+        /// Обновить данные о компьютере
         /// </summary>
-        /// <param name="computer"></param>
+        /// <param name="computer">Объект Computer с новыми данными</param>
         public void Update(Computer computer)
         {
             const string sql = @"
@@ -91,14 +90,13 @@ namespace PcBack.Data.Repository
             _db.Execute(sql, computer);
         }
 
+        /// <summary>
+        /// Удалить компьютер по ID
+        /// </summary>
+        /// <param name="id">ID компьютера</param>
         public void Delete(int id)
         {
             _db.Execute("DELETE FROM computers WHERE Id = @Id", new { Id = id });
         }
-
-
-
-
-
     }
 }

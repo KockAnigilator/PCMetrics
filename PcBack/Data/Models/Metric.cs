@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PcBack.Data.Models
 {
     /// <summary>
-    /// Класс-модель для таблицы в бд
+    /// Класс-модель для таблицы Metrics
     /// </summary>
     public class Metric
     {
-        private int id;
-        private string name;
-        private List<MetricValue> metricValues;
+        public int Id { get; set; }
+        public string Name { get; set; }
 
-        public int Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
-        public List<MetricValue> MetricValues { get => metricValues; set => metricValues = value; }
+        // Связь один ко многим: одна метрика может иметь много значений
+        public List<MetricValue> MetricValues { get; set; }
     }
 }

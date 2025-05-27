@@ -55,7 +55,7 @@ namespace PcBack.Data.Repository
             _db = new NpgsqlConnection(connectionString);
         }
 
-        IEnumerable<Metric> GetAllMetrics()
+        public IEnumerable<Metric> GetAllMetrics()
         {
             return _db.Query<Metric>("SELECT * FROM metrics");
         }
@@ -66,10 +66,10 @@ namespace PcBack.Data.Repository
             "SELECT * FROM Metrics WHERE Id = @Id",
             new { Id = id });
         }
-        
+
         public Metric GetMetricByName(string name)
         {
-            return _db.QueryFirstOrDefault<Metric>(@"SELECT * FROM metrics WHERE name = @Name", new {Name = name});
+            return _db.QueryFirstOrDefault<Metric>(@"SELECT * FROM metrics WHERE name = @Name", new { Name = name });
         }
 
         public void CreateMetric(Metric metric)
@@ -81,13 +81,13 @@ namespace PcBack.Data.Repository
             _db.Execute(sql, metric);
         }
 
-        public void AddMetricsValue(MetricValue metricValue)
+        public void CreateMetricValue(MetricValue metricValue)
         {
             const string sql = "INSERT INTO metricvalues (computerid, metricid, value, recodredat) VALUES (@ComputerId, @MetricId, @Value, @RecodredAt)";
             _db.Execute(sql, metricValue);
         }
 
-        IEnumerable<MetricValue> GetLastMetricValues(int metricId, int count = 10)
+        public IEnumerable<MetricValue> GetLastMetricValues(int metricId, int count = 10)
         {
             var query = $@"
                 SELECT * 
@@ -99,7 +99,5 @@ namespace PcBack.Data.Repository
             return _db.Query<MetricValue>(query, new { MetricId = metricId });
         }
     }
-
-
-    }
 }
+

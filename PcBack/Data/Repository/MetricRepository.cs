@@ -46,6 +46,10 @@ namespace PcBack.Data.Repository
         IEnumerable<MetricValue> GetLastMetricValues(int metricId, int count = 10);
     }
 
+
+    /// <summary>
+    /// CRUD - операции
+    /// </summary>
     public class MetricRepository : IMetricRepository
     {
         private readonly IDbConnection _db;
@@ -55,11 +59,21 @@ namespace PcBack.Data.Repository
             _db = new NpgsqlConnection(connectionString);
         }
 
+
+        /// <summary>
+        /// Получить все
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Metric> GetAllMetrics()
         {
             return _db.Query<Metric>("SELECT * FROM metrics");
         }
 
+        /// <summary>
+        /// Получить по Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Metric GetMetricById(int id)
         {
             return _db.QueryFirstOrDefault<Metric>(
@@ -67,11 +81,20 @@ namespace PcBack.Data.Repository
             new { Id = id });
         }
 
+        /// <summary>
+        /// Получить по имени
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public Metric GetMetricByName(string name)
         {
             return _db.QueryFirstOrDefault<Metric>(@"SELECT * FROM metrics WHERE name = @Name", new { Name = name });
         }
 
+        /// <summary>
+        /// Создание
+        /// </summary>
+        /// <param name="metric"></param>
         public void CreateMetric(Metric metric)
         {
             const string sql = @"
@@ -81,12 +104,22 @@ namespace PcBack.Data.Repository
             _db.Execute(sql, metric);
         }
 
+        /// <summary>
+        /// Создание для другой таблице
+        /// </summary>
+        /// <param name="metricValue"></param>
         public void CreateMetricValue(MetricValue metricValue)
         {
             const string sql = "INSERT INTO metricvalues (computerid, metricid, value, recodredat) VALUES (@ComputerId, @MetricId, @Value, @RecodredAt)";
             _db.Execute(sql, metricValue);
         }
 
+        /// <summary>
+        /// Получить последнюю метрику
+        /// </summary>
+        /// <param name="metricId"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public IEnumerable<MetricValue> GetLastMetricValues(int metricId, int count = 10)
         {
             var query = $@"

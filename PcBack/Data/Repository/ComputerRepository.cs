@@ -41,8 +41,9 @@ namespace PcBack.Data.Repository
         }
 
         /// <summary>
-        /// Получить список всех компьютеров
+        /// Получает список всех компьютеров из базы данных.
         /// </summary>
+        /// <returns>Список объектов Computer</returns>
         public IEnumerable<Computer> GetAll()
         {
             return _db.Query<Computer>("SELECT * FROM computers");

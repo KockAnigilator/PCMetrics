@@ -110,7 +110,7 @@ namespace PcBack.Data.Repository
         /// <param name="metricValue"></param>
         public void CreateMetricValue(MetricValue metricValue)
         {
-            const string sql = "INSERT INTO metricvalues (computerid, metricid, value, recodredat) VALUES (@ComputerId, @MetricId, @Value, @RecodredAt)";
+            const string sql = "INSERT INTO metricvalues (computerid, metricid, value, recordedat) VALUES (@ComputerId, @MetricId, @Value, @RecordedAt)";
             _db.Execute(sql, metricValue);
         }
 

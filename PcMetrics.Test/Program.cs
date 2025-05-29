@@ -1,6 +1,8 @@
 ﻿using PcBack.Data.Models;
 using PcBack.Data.Repository;
+using PcBack.Services;
 using System;
+using System.Linq;
 
 namespace PcMetrics.Test
 {
@@ -8,58 +10,28 @@ namespace PcMetrics.Test
     {
         static void Main(string[] args)
         {
-            var connString = "Host=localhost;Username=postgres;Password=1545;Database=PcMonitoringDb";
+            var connString = "Host=localhost;Username=postgres;Password=ваш_пароль;Database=PcMonitoringDb";
 
-            ComputerRepository computerRepository = new ComputerRepository(connString);
-            MetricRepository metricRepository = new MetricRepository(connString);
+            var computerRepo = new ComputerRepository(connString);
+            var metricRepo = new MetricRepository(connString);
 
-            Console.WriteLine("=== Тестирование базы данных ===\n");
+            // Выбираем компьютер
+            var computer = computerRepo.GetAll().FirstOrDefault() ??
+                           throw new Exception("Нет доступных компьютеров");
 
-            // Получаем список всех компьютеров
-            Console.WriteLine("Компьютеры:");
-            foreach (var comp in computerRepository.GetAll())
-            {
-                Console.WriteLine($"ID: {comp.Id}, Имя: {comp.Name}, IP: {comp.IpAddress}");
-            }
+            // Создаём сервис мониторинга
+            var monitor = new SystemMonitorService(metricRepo, (IComputerRepository)computerRepo, intervalMs: 5000, computer.Id);
 
-            // Получаем список всех метрик
-            Console.WriteLine("\nМетрики:");
-            foreach (var metric in metricRepository.GetAllMetrics())
-            {
-                Console.WriteLine($"ID: {metric.Id}, Название: {metric.Name}");
-            }
+            // Добавляем сборщики
+            monitor.AddCollector(new СPUMetricCollector());
+            monitor.AddCollector(new RAMMetricCollector());
 
-            // Получаем CPU метрику
-            var cpu = metricRepository.GetMetricByName("CPU Usage");
-            if (cpu != null)
-            {
-                Console.WriteLine($"\nПоследние значения CPU (метрика ID={cpu.Id}):");
-                var values = metricRepository.GetLastMetricValues(cpu.Id, 5);
-                foreach (var val in values)
-                {
-                    Console.WriteLine($"{val.RecordedAt} → {val.Value}%");
-                }
+            // Запускаем
+            monitor.Start();
 
-                // Добавляем новое значение метрики
-                var testValue = new MetricValue
-                {
-                    ComputerId = 1,
-                    MetricId = cpu.Id,
-                    Value = 45.5m,
-                    RecordedAt = DateTime.Now
-                };
-
-                metricRepository.CreateMetricValue(testValue);
-                Console.WriteLine("\n✅ Новое значение CPU успешно добавлено!");
-            }
-            else
-            {
-                Console.WriteLine("\n❌ Метрика 'CPU Usage' не найдена в БД.");
-            }
-
-            Console.WriteLine("\nНажмите любую клавишу для выхода...");
+            Console.WriteLine("Нажмите любую клавишу для выхода...");
             Console.ReadKey();
-
+            monitor.Stop();
         }
     }
 }

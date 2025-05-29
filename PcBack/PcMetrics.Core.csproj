@@ -97,6 +97,10 @@
     <Compile Include="Data\Repository\ComputerRepository.cs" />
     <Compile Include="Data\Repository\MetricRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DTO\CollectedMetricValue.cs" />
+    <Compile Include="Services\IMetricCollector.cs" />
+    <Compile Include="Services\SystemMonitorService.cs" />
+    <Compile Include="Services\СPUMetricCollector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

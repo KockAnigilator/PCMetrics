@@ -10,23 +10,19 @@ namespace PcMetrics.Test
     {
         static void Main(string[] args)
         {
-            var connString = "Host=localhost;Username=postgres;Password=ваш_пароль;Database=PcMonitoringDb";
+            var connString = "Host=localhost;Username=postgres;Password=1545;Database=PcMonitoringDb";
 
             var computerRepo = new ComputerRepository(connString);
             var metricRepo = new MetricRepository(connString);
 
-            // Выбираем компьютер
             var computer = computerRepo.GetAll().FirstOrDefault() ??
                            throw new Exception("Нет доступных компьютеров");
 
-            // Создаём сервис мониторинга
-            var monitor = new SystemMonitorService(metricRepo, (IComputerRepository)computerRepo, intervalMs: 5000, computer.Id);
+            var monitor = new SystemMonitorService(metricRepo, computerRepo, intervalMs: 5000, computer.Id);
 
-            // Добавляем сборщики
-            monitor.AddCollector(new СPUMetricCollector());
+            monitor.AddCollector(new CPUMetricCollector());
             monitor.AddCollector(new RAMMetricCollector());
 
-            // Запускаем
             monitor.Start();
 
             Console.WriteLine("Нажмите любую клавишу для выхода...");

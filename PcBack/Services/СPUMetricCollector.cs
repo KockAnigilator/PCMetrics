@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace PcBack.Services
 {
-    public class СPUMetricCollector : IMetricCollector
+    public class CPUMetricCollector : IMetricCollector
     {
-        private readonly PerformanceCounter cpuCounter = new PerformanceCounter("Proccesor", "% Proccesor Time", "_Total");
+        private readonly PerformanceCounter cpuCounter =
+            new PerformanceCounter("Processor", "% Processor Time", "_Total");
 
-        
         public IEnumerable<CollectedMetricValue> Collect()
         {
             var value = new CollectedMetricValue
@@ -23,11 +23,11 @@ namespace PcBack.Services
                 RecordedAt = DateTime.Now
             };
 
+            // Первый вызов может быть некорректным — делаем задержку
             Task.Delay(500).Wait();
             value.Value = Convert.ToDecimal(cpuCounter.NextValue());
 
             return new List<CollectedMetricValue> { value };
         }
-
     }
 }

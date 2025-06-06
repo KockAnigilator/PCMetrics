@@ -27,7 +27,7 @@ namespace PcBack.Data.Repository
     /// <summary>
     /// Реализация репозитория для работы с компьютерами через Dapper
     /// </summary>
-    public class ComputerRepository
+    public class ComputerRepository : IComputerRepository
     {
         private readonly IDbConnection _db;
 

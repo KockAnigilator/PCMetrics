@@ -1,6 +1,6 @@
 ﻿using Dapper;
 using Npgsql;
-using PcBack.Data.Models;
+using PcMetrics.Core.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBack.Data.Repository
+namespace PcMetrics.Core.Data.Repository
 {
     /// <summary>
     /// Интерфейс для работы с метриками в БД

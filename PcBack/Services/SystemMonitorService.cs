@@ -1,5 +1,5 @@
-﻿using PcBack.Data.Models;
-using PcBack.Data.Repository;
+﻿using PcMetrics.Core.Data.Models;
+using PcMetrics.Core.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace PcBack.Services
+namespace PcMetrics.Core.Services
 {
     public class SystemMonitorService
     {

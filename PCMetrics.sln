@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcMetrics.Core", "PcBack\PcMetrics.Core.csproj", "{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcBack", "PcBack\PcBack.csproj", "{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcMetrics.Test", "PcMetrics.Test\PcMetrics.Test.csproj", "{CE4DDEDC-387D-48BA-A384-ACE828E0C39B}"
 EndProject

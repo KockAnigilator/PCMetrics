@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PcBack.Data.Models
+namespace PcMetrics.Core.Data.Models
 {
     /// <summary>
     /// Класс-модель для таблицы MetricValues

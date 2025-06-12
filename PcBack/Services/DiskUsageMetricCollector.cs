@@ -1,4 +1,4 @@
-﻿using PcBack.Services.DTO;
+﻿using PcMetrics.Core.Services.DTO;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBack.Services
+namespace PcMetrics.Core.Services
 {
     public class DiskUsageMetricCollector : IMetricCollector
     {

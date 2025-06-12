@@ -73,9 +73,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PcBack\PcMetrics.Core.csproj">
+    <ProjectReference Include="..\PcBack\PcBack.csproj">
       <Project>{7abe29d1-9271-4f77-8f52-6fa41e7f8a12}</Project>
-      <Name>PcMetrics.Core</Name>
+      <Name>PcBack</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

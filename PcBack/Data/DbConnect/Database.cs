@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 
-namespace PcBack.Data.DbContext
+namespace PcMetrics.Core.Data.DbContext
 {
     public static class Database
     {

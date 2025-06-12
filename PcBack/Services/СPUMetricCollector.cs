@@ -1,4 +1,4 @@
-﻿using PcBack.Services.DTO;
+﻿using PcMetrics.Core.Services.DTO;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBack.Services
+namespace PcMetrics.Core.Services
 {
     public class CPUMetricCollector : IMetricCollector
     {

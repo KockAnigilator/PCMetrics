@@ -1,13 +1,9 @@
-﻿using OpenHardwareMonitor.Hardware;
-using PcBack.Data.Models;
-using PcBack.Services.DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OpenHardwareMonitor.Hardware;
+using PcMetrics.Core.Services.DTO;
 
-namespace PcBack.Services
+namespace PcMetrics.Core.Services
 {
     public class TemperatureMetricCollector : IMetricCollector
     {
@@ -15,16 +11,8 @@ namespace PcBack.Services
 
         public TemperatureMetricCollector()
         {
-            _ohmComputer = new OpenHardwareMonitor.Hardware.Computer
-            {
-                CPUEnabled = true,
-                GPUEnabled = true,
-                FanControllerEnabled = false,
-                RAMEnabled = false,
-                MainboardEnabled = false,
-                HDDEnabled = false
-            };
-            _ohmComputer.Open();
+            _ohmComputer = new OpenHardwareMonitor.Hardware.Computer();
+            _ohmComputer.Open(false); 
         }
 
         public IEnumerable<CollectedMetricValue> Collect()

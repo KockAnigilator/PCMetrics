@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBack.Services.DTO
+namespace PcMetrics.Core.Services.DTO
 {
     /// <summary>
     /// Отделяем логику от БД

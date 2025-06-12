@@ -1,11 +1,11 @@
-﻿using PcBack.Services.DTO;
+﻿using PcMetrics.Core.Services.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PcBack.Services
+namespace PcMetrics.Core.Services
 {
     /// <summary>
     /// Интерфейс по сбору метрик с ПК

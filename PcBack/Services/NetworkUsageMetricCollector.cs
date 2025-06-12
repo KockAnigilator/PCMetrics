@@ -1,15 +1,11 @@
 ﻿using PcMetrics.Core.Services.DTO;
+using PcMetrics.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PcMetrics.Core.Services
+namespace PcBack.Services.Collectors
 {
-    using System.Diagnostics;
-
     public class NetworkUsageMetricCollector : IMetricCollector
     {
         private readonly PerformanceCounter networkInCounter;
@@ -17,52 +13,74 @@ namespace PcMetrics.Core.Services
 
         public NetworkUsageMetricCollector()
         {
-            string instance = GetFirstNetworkInstance();
+            string categoryName = GetNetworkCategoryName();
+            string instanceName = GetFirstNetworkInstance(categoryName);
 
-            networkInCounter = new PerformanceCounter("Network Interface", "Bytes Received/sec", instance);
-            networkOutCounter = new PerformanceCounter("Network Interface", "Bytes Sent/sec", instance);
+            networkInCounter = new PerformanceCounter(categoryName, "Bytes Received/sec", instanceName);
+            networkOutCounter = new PerformanceCounter(categoryName, "Bytes Sent/sec", instanceName);
         }
 
-        private string GetFirstNetworkInstance()
+        // Получаем имя сетевой категории
+        private string GetNetworkCategoryName()
         {
             foreach (var category in PerformanceCounterCategory.GetCategories())
             {
-                if (category.CategoryName.Contains("Network Interface"))
+                if (category.CategoryName.IndexOf("network", StringComparison.OrdinalIgnoreCase) >= 0)
                 {
-                    var instances = category.GetInstanceNames();
-                    if (instances.Length > 0)
-                    {
-                        return instances[0]; // Берём первый активный интерфейс
-                    }
+                    return category.CategoryName;
                 }
             }
 
-            throw new InvalidOperationException("Сетевой интерфейс не найден");
+            throw new InvalidOperationException("Сетевая категория счетчиков не найдена");
+        }
+
+        // Получаем первый подходящий интерфейс
+        private string GetFirstNetworkInstance(string categoryName)
+        {
+            var category = new PerformanceCounterCategory(categoryName);
+            string[] instances = category.GetInstanceNames();
+
+            if (instances.Length == 0)
+                throw new InvalidOperationException("Нет активных сетевых подключений");
+
+            foreach (string instance in instances)
+            {
+                // Проверяем, что это не виртуальный/ненужный адаптер
+                if (instance.IndexOf("isatap", StringComparison.OrdinalIgnoreCase) < 0 &&
+                    instance.IndexOf("loopback", StringComparison.OrdinalIgnoreCase) < 0)
+                {
+                    return instance;
+                }
+            }
+
+            return instances[0]; // Если все остальные не подходят
         }
 
         public IEnumerable<CollectedMetricValue> Collect()
         {
-            decimal inSpeedMB = Convert.ToDecimal(networkInCounter.NextValue()) / (1024 * 1024);
-            decimal outSpeedMB = Convert.ToDecimal(networkOutCounter.NextValue()) / (1024 * 1024);
+                decimal inSpeedMB = Convert.ToDecimal(networkInCounter.NextValue() / (1024 * 1024));
+                decimal outSpeedMB = Convert.ToDecimal(networkOutCounter.NextValue() / (1024 * 1024));
 
-            Task.Delay(500).Wait(); // Первое значение может быть некорректным
+                // Первый вызов может быть некорректным — делаем задержку
+                System.Threading.Tasks.Task.Delay(500).Wait();
 
-            inSpeedMB = Convert.ToDecimal(networkInCounter.NextValue()) / (1024 * 1024);
-            outSpeedMB = Convert.ToDecimal(networkOutCounter.NextValue()) / (1024 * 1024);
+                inSpeedMB = Convert.ToDecimal(networkInCounter.NextValue() / (1024 * 1024));
+                outSpeedMB = Convert.ToDecimal(networkOutCounter.NextValue() / (1024 * 1024));
 
-            yield return new CollectedMetricValue
-            {
-                MetricName = "Network Download (MB/s)",
-                Value = Math.Round(inSpeedMB, 2),
-                RecordedAt = DateTime.Now
-            };
+                // ✅ Выносим yield за пределы try-catch
+                yield return new CollectedMetricValue
+                {
+                    MetricName = "Network Download (MB/s)",
+                    Value = Math.Round(inSpeedMB, 2),
+                    RecordedAt = DateTime.Now
+                };
 
-            yield return new CollectedMetricValue
-            {
-                MetricName = "Network Upload (MB/s)",
-                Value = Math.Round(outSpeedMB, 2),
-                RecordedAt = DateTime.Now
-            };
+                yield return new CollectedMetricValue
+                {
+                    MetricName = "Network Upload (MB/s)",
+                    Value = Math.Round(outSpeedMB, 2),
+                    RecordedAt = DateTime.Now
+                };
         }
     }
 }

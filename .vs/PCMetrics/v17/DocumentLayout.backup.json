@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\services\\networkusagemetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\data\\repository\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\data\\repository\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcMetrics.Core.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\pcback\\data\\repository\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcMetrics.Core.csproj|solutionrelative:pcback\\data\\repository\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\pcback\\services\\networkusagemetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\services\\networkusagemetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -65,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcMetrics.Core.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcMetrics.Core.csproj|solutionrelative:PcBack\\Data\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcMetrics.Core.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\pcback\\data\\repository\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcMetrics.Core.csproj|solutionrelative:pcback\\data\\repository\\metricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,6 +87,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MetricRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Repository\\MetricRepository.cs",
+              "RelativeDocumentMoniker": "PcBack\\Data\\Repository\\MetricRepository.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Repository\\MetricRepository.cs",
+              "RelativeToolTip": "PcBack\\Data\\Repository\\MetricRepository.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAwEUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:07:12.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "NetworkUsageMetricCollector.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\NetworkUsageMetricCollector.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\NetworkUsageMetricCollector.cs",
@@ -90,12 +107,11 @@
               "RelativeToolTip": "PcBack\\Services\\NetworkUsageMetricCollector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T12:08:11.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T12:08:11.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NetworkUsageMetricCollector.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\NetworkUsageMetricCollector.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\NetworkUsageMetricCollector.cs",
@@ -107,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "DiskUsageMetricCollector.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\DiskUsageMetricCollector.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\DiskUsageMetricCollector.cs",
@@ -119,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TemperatureMetricCollector.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\TemperatureMetricCollector.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\TemperatureMetricCollector.cs",
@@ -131,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcMetrics.Test\\Program.cs",
               "RelativeDocumentMoniker": "PcMetrics.Test\\Program.cs",
@@ -143,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "RAMMetricCollector.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\RAMMetricCollector.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\RAMMetricCollector.cs",
@@ -155,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CollectedMetricValue.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\DTO\\CollectedMetricValue.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\DTO\\CollectedMetricValue.cs",
@@ -167,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "IMetricCollector.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\Interfaces\\IMetricCollector.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\Interfaces\\IMetricCollector.cs",
@@ -179,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "\u0421PUMetricCollector.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\\u0421PUMetricCollector.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\\u0421PUMetricCollector.cs",
@@ -191,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SystemMonitorService.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Services\\SystemMonitorService.cs",
               "RelativeDocumentMoniker": "PcBack\\Services\\SystemMonitorService.cs",
@@ -203,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "MetricRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Repository\\MetricRepository.cs",
               "RelativeDocumentMoniker": "PcBack\\Data\\Repository\\MetricRepository.cs",
@@ -215,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ComputerRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Repository\\ComputerRepository.cs",
               "RelativeDocumentMoniker": "PcBack\\Data\\Repository\\ComputerRepository.cs",
@@ -227,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\DbConnect\\Database.cs",
               "RelativeDocumentMoniker": "PcBack\\Data\\DbConnect\\Database.cs",
@@ -239,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\User.cs",
               "RelativeDocumentMoniker": "PcBack\\Data\\Models\\User.cs",
@@ -251,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "MetricValue.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\MetricValue.cs",
               "RelativeDocumentMoniker": "PcBack\\Data\\Models\\MetricValue.cs",
@@ -263,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Metric.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\Metric.cs",
               "RelativeDocumentMoniker": "PcBack\\Data\\Models\\Metric.cs",
@@ -275,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Computer.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\Computer.cs",
               "RelativeDocumentMoniker": "PcBack\\Data\\Models\\Computer.cs",

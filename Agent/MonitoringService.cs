@@ -47,7 +47,7 @@ namespace Agent
  
         protected override void OnStop()
         {
-            Console.WriteLine("🔴 Служба мониторинга остановлена");
+            Console.WriteLine("Служба мониторинга остановлена");
             _monitor.Stop();
         }
     }

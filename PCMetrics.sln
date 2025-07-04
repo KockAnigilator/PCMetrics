@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcBack", "PcBack\PcBack.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcMetrics.Test", "PcMetrics.Test\PcMetrics.Test.csproj", "{CE4DDEDC-387D-48BA-A384-ACE828E0C39B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent", "Agent\Agent.csproj", "{EFCB7701-3F35-4B13-998A-3BF3914B122E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CE4DDEDC-387D-48BA-A384-ACE828E0C39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE4DDEDC-387D-48BA-A384-ACE828E0C39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE4DDEDC-387D-48BA-A384-ACE828E0C39B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCB7701-3F35-4B13-998A-3BF3914B122E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCB7701-3F35-4B13-998A-3BF3914B122E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCB7701-3F35-4B13-998A-3BF3914B122E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCB7701-3F35-4B13-998A-3BF3914B122E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

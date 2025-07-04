@@ -17,7 +17,7 @@ namespace PcMetrics.Core.Services
         {
             var value = new CollectedMetricValue
             {
-                MetricName = "DiskUsage (%)",
+                MetricName = "Disk Usage (%)",
                 Value = Convert.ToDecimal(diskCounter.NextValue()),
                 RecordedAt = DateTime.Now
             };

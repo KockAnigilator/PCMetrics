@@ -24,7 +24,7 @@ namespace PcMetrics.Core.Services
 
                     yield return new CollectedMetricValue
                     {
-                        MetricName = "Ram Usage (%)",
+                        MetricName = "RAM Usage (%)",
                         Value = Math.Round(usedPercent, 2),
                         RecordedAt = DateTime.Now
                     };
@@ -32,7 +32,7 @@ namespace PcMetrics.Core.Services
 
                     yield return new CollectedMetricValue
                     {
-                        MetricName = "Ram Usage (MB)",
+                        MetricName = "RAM Usage (MB)",
                         Value = (totalMemory - freeMemory) / 1024,
                         RecordedAt = DateTime.Now
                     };

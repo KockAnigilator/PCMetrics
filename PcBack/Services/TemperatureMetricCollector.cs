@@ -27,7 +27,7 @@ namespace PcMetrics.Core.Services
                     {
                         yield return new CollectedMetricValue
                         {
-                            MetricName = $"{hardware.Name} Temperature",
+                            MetricName = $"{hardware.Name} Temperature (CPU)",
                             Value = (decimal)Math.Round(sensor.Value ?? 0, 2),
                             RecordedAt = DateTime.Now
                         };

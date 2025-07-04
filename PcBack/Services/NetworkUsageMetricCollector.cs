@@ -10,7 +10,6 @@ namespace PcBack.Services.Collectors
     {
         public NetworkUsageMetricCollector()
         {
-            // В WMI нет необходимости создавать счетчики заранее
             Console.WriteLine("📡 Используется WMI для получения сетевых данных");
         }
 
@@ -26,16 +25,20 @@ namespace PcBack.Services.Collectors
                     var receivedBytes = Convert.ToDecimal(queryObj["BytesReceivedPerSec"]);
                     var sentBytes = Convert.ToDecimal(queryObj["BytesSentPerSec"]);
 
+                    Console.WriteLine($"Интерфейс: {interfaceName}");
+                    Console.WriteLine($"Bytes Received/sec: {receivedBytes}");
+                    Console.WriteLine($"Bytes Sent/sec: {sentBytes}");
+
                     yield return new CollectedMetricValue
                     {
-                        MetricName = $"Network Download ({interfaceName})",
+                        MetricName = "Network Download (MB/s)",
                         Value = Math.Round(receivedBytes / (1024 * 1024), 2),
                         RecordedAt = DateTime.Now
                     };
 
                     yield return new CollectedMetricValue
                     {
-                        MetricName = $"Network Upload ({interfaceName})",
+                        MetricName = "Network Upload (MB/s)",
                         Value = Math.Round(sentBytes / (1024 * 1024), 2),
                         RecordedAt = DateTime.Now
                     };

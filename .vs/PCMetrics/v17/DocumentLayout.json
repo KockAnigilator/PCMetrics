@@ -11,19 +11,19 @@
       "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcMetrics.Core.csproj|solutionrelative:PcBack\\Data\\Models\\Metric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFCB7701-3F35-4B13-998A-3BF3914B122E}|Agent\\Agent.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\agent\\monitoringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFCB7701-3F35-4B13-998A-3BF3914B122E}|Agent\\Agent.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\agent\\monitoringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFCB7701-3F35-4B13-998A-3BF3914B122E}|Agent\\Agent.csproj|solutionrelative:agent\\monitoringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\services\\systemmonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\pcback\\services\\systemmonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\services\\systemmonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\services\\rammetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\pcback\\services\\rammetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\services\\rammetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\pcmetrics\\pcback\\services\\diskusagemetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\pcback\\services\\diskusagemetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ABE29D1-9271-4F77-8F52-6FA41E7F8A12}|PcBack\\PcBack.csproj|solutionrelative:pcback\\services\\diskusagemetriccollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "PcBack\\Data\\Models\\Metric.cs",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\PCMetrics\\PcBack\\Data\\Models\\Metric.cs",
               "RelativeToolTip": "PcBack\\Data\\Models\\Metric.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T11:56:52.595Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "Agent\\MonitoringService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T11:52:39.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T11:52:39.131Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "PcBack\\Services\\SystemMonitorService.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAQwDMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T11:50:12.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T11:50:12.115Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "PcBack\\Services\\DiskUsageMetricCollector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T11:11:19.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T11:11:19.852Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "PcBack\\Services\\RAMMetricCollector.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T11:09:35.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T11:09:35.556Z"
             },
             {
               "$type": "Document",

@@ -10,7 +10,7 @@ namespace PcMetrics.Core.Data.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        // Связь один ко многим: одна метрика может иметь много значений
+        // Связь один ко многим: одна метрика может иметь много значенийf
         public List<MetricValue> MetricValues { get; set; }
     }
 }
